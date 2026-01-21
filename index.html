@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KEVOS | Solar & Automatic Doors</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; background: #f9fafb; color: #1f2937; }
+    header { background: #ffffff; box-shadow: 0 1px 4px rgba(0,0,0,0.08); position: sticky; top: 0; z-index: 100; }
+    .container { max-width: 1200px; margin: auto; padding: 0 20px; }
+    .nav { display: flex; justify-content: space-between; align-items: center; padding: 18px 0; }
+    .nav a { margin-left: 20px; text-decoration: none; color: #1f2937; font-weight: 500; }
+    .nav a:hover { color: #1d4ed8; }
+    .hero { background: linear-gradient(135deg, #1e3a8a, #1d4ed8); color: #fff; padding: 100px 20px; text-align: center; }
+    .hero h1 { font-size: 42px; margin-bottom: 15px; }
+    .hero p { font-size: 18px; max-width: 700px; margin: auto; }
+    .btn { background: #fff; color: #1d4ed8; padding: 14px 32px; border-radius: 8px; text-decoration: none; font-weight: 600; display: inline-block; margin-top: 30px; cursor: pointer; }
+    section { padding: 80px 0; }
+    h2 { text-align: center; font-size: 32px; margin-bottom: 50px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+    .card { background: #fff; border-radius: 16px; padding: 30px; box-shadow: 0 10px 25px rgba(0,0,0,0.06); }
+    .card h3 { margin-top: 10px; }
+    .card ul { padding-left: 18px; }
+    .card ul li { margin-bottom: 8px; }
+    .about { background: #ffffff; text-align: center; }
+    .projects .card { height: 160px; display: flex; align-items: center; justify-content: center; color: #6b7280; }
+    .contact { background: #f3f4f6; }
+    .contact .card { font-weight: 500; }
+     footer { background: #1e3a8a; color: #fff; text-align: center; padding: 20px; font-size: 14px; }
+
+    /* 🔧 FORM FIX */
+    input, textarea, select {
+      background: #ffffff;
+      color: #111827;
+      caret-color: #111827;
+    }
+    input::placeholder, textarea::placeholder {
+      color: #6b7280;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <strong>KEVOS</strong>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <h1>Solar Energy & Automatic Door Experts</h1>
+  <p>KEVOS provides professional solar power installations and automatic door systems for homes, offices, and commercial facilities nationwide.</p>
+  <a href="#contact" class="btn">Request a Free Quote</a>
+</section>
+
+<section id="services" class="container">
+  <h2>Our Core Services</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Solar Power Installation</h3>
+      <ul>
+        <li>Residential & Commercial Solar Systems</li>
+        <li>Inverters and Battery Backup</li>
+        <li>Maintenance & Repairs</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Automatic Door Systems</h3>
+      <ul>
+        <li>Sliding & Swing Automatic Doors</li>
+        <li>Sensor & Access Control Systems</li>
+        <li>Professional Servicing & Repairs</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <div class="container">
+    <h2>Why Choose KEVOS</h2>
+    <p>We are a nationwide engineering company focused on quality, safety, and customer satisfaction. Our solutions are designed to be reliable, energy-efficient, and long-lasting.</p>
+  </div>
+</section>
+
+<section id="projects" class="projects container">
+  <h2>Recent Projects</h2>
+  <div class="grid">
+    <div class="card">Solar Installation Project</div>
+    <div class="card">Automatic Door Project</div>
+    <div class="card">Commercial Power System</div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="container">
+    <h2>Contact Us</h2>
+    <div class="grid">
+      <div class="card">📞 +2348035409696</div>
+      <div class="card">✉️ ken_evbuomwan@hotmail.com</div>
+    </div>
+
+    <div style="margin-top:50px; max-width:600px; margin-left:auto; margin-right:auto;">
+      <h3 style="text-align:center; margin-bottom:20px;">Request a Free Quote</h3>
+      <form action="https://formsubmit.co/ken_evbuomwan@hotmail.com" method="POST" class="card" style="padding:100px;">
+
+  <label style="font-weight:600;">Full Name</label>
+  <input required type="text" name="name" placeholder="Your full name" style="width:93%; padding:16px; font-size:16px; margin:10px 0 22px; border-radius:10px; border:1px solid #9ca3af; outline:none;">
+
+  <label style="font-weight:600;">Phone Number</label>
+  <input required type="tel" name="phone" placeholder="Your phone number" style="width:93%; padding:16px; font-size:16px; margin:10px 0 22px; border-radius:10px; border:1px solid #9ca3af; outline:none;">
+
+  <label style="font-weight:600;">Service Needed</label>
+  <select name="service" style="width:100%; padding:16px; font-size:16px; margin:10px 0 22px; border-radius:10px; border:1px solid #9ca3af; outline:none;">
+    <option>Solar Installation</option>
+    <option>Automatic Door Installation</option>
+    <option>Maintenance / Repairs</option>
+  </select>
+
+  <label style="font-weight:600;">Message</label>
+  <textarea name="message" rows="6" placeholder="Tell us about your project" style="width:93%; padding:16px; font-size:16px; margin:10px 0 28px; border-radius:10px; border:1px solid #9ca3af; outline:none; resize:vertical;"></textarea>
+
+  <button type="submit" class="btn" style="width:100%; text-align:center; font-size:16px;">Send Request</button>
+</form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 KEVOS. All Rights Reserved.
+</footer>
+
+</body>
+</html>
